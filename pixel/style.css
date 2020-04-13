@@ -1,0 +1,65 @@
+body {
+  background:orchid;
+    text-align: center;
+     margin: auto;
+       font-family: 'WorkReg';
+}
+    h1 {
+      font-family: 'beanz';
+    color:black;
+    font-weight: 400;
+    margin: 0;
+}
+
+#art {
+    max-width: 70%;
+    margin: auto;
+     text-align: center;
+     display: table;
+     background-color: black;
+     border: 5px solid black;
+     border-radius: 5px;
+   }
+   
+   a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+  }
+
+
+a:hover {
+    color: dimgray;
+  }
+  
+
+   .row {
+
+     display: table-row;
+   }
+   
+   .pixel {
+     display: table-cell;
+     background-color: white;
+     height: 40px;
+     width: 40px;
+     border: 0px;
+   }
+
+   
+    .pen {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border: 5px solid black;
+      border-radius: 5px;
+    }
+
+    .pen2 {
+      display: table-cell;
+      width: 40px;
+      height: 40px;
+      border: 5px solid black;
+      background-color: black;
+      border-radius: 5px;
+    }

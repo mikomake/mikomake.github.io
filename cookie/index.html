@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/png" href="cookie.svg">
+	<title>Cookie Clicker</title>
+</head>
+<body>
+	<img src="/pics/back.svg" style="cursor: pointer;position:absolute; left: 5px; top: 5px;" draggable=false onmousedown="history.back();">
+	<div id="clickerdiv">
+		<div id="insidediv">
+		    <br>
+            <img src="cookie.png">
+			<p id="cookiesperclick">
+					Cookies per click: 1
+				</p>
+				<p id="bonustimetext">
+
+				</p>
+				<h3>Cookie Size</h3>
+				<div class="slidecontainer">
+					<input type="range" min="100" max="300" value="100" class="slider mdc-slider" id="myRange">
+				</div><br />
+			<img id="cookie" onclick="thing();" src="cookie.svg" width="100px"/>
+			<h1 id="thing">0</h1>
+			<input type="button" class="localbutton" onclick="window.location.href = 'view2.html'" style="text-align: center" value="Switch View" />
+		</div>
+	</div>
+	<div id="shopdiv">
+		<form id="shopinside">
+			<h2>Shop</h2>
+			<input id="increaseshop" type="button" class="item" onclick="moreclick();" style="text-align: center" value="Increase cookies per click"/><br /><br />
+			<input type="button" id="autoclickertext" class="item" onclick="autoclick();" style="text-align: center" value="Buy autoclicker" /><br /><br />
+			<input type="button" id="bonustext" class="item" onclick="buybonus();" style="text-align: center" value="Buy 2x bonus for 3 mins" /><br /><br />
+			<input type="button" id="animatecookietext" class="item" onclick="animatecookie();" style="text-align: center" value="Buy animated cookie" /><br /><br />
+		</form>
+	</div>
+	<div id="localstoragediv">
+		<div id="localinside">
+			<h2>Save progress</h2>
+			<input type="button" class="localbutton" onclick="save();" style="text-align: center" value="Save" />
+			<input type="button" class="localbutton" onclick="load();" style="text-align: center" value="Load" />
+		</div>
+	</div>
+	<script src="counter.js" type="text/javascript"></script>
+</body>
+</html>

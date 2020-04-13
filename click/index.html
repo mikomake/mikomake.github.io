@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/button.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/fonts/stylesheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/svg" href="click.png">
+        <title>Click Speed Test</title>
+    </head>
+    <body>
+        <br>
+        <img src="/pics/back.svg" style="cursor: pointer;position:absolute; left: 5px; top: 5px;" draggable=false onmousedown="history.back();">
+        <img src="click.png"><br>
+        <h1>Click Speed Test</h1>
+        <button onclick="start();" id="button" class="mdc-button mdc-button--raised">
+            <div class="mdc-button__ripple"></div>
+            <span id="clickme" style="text-transform: initial;" class="mdc-button__label">Start</span>
+          </button>
+          <h2 id="clicks"></h2>
+          <h2 id="remain"></h2>
+        <div id="select">
+            <h2> Select Mode</h2>
+            <button onclick="five();"  class="mdc-button mdc-button--raised">
+                <div class="mdc-button__ripple"></div>
+                <span id="clickme" style="text-transform: initial;" class="mdc-button__label">5 Seconds</span>
+              </button><br>
+              <button onclick="ten();"class="mdc-button mdc-button--raised">
+                <div class="mdc-button__ripple"></div>
+                <span id="clickme" style="text-transform: initial;" class="mdc-button__label">10 Seconds</span>
+              </button><br>
+              <button onclick="sixty();" class="mdc-button mdc-button--raised">
+                <div class="mdc-button__ripple"></div>
+                <span id="clickme" style="text-transform: initial;" class="mdc-button__label">60 Seconds</span>
+              </button><br>
+              <button onclick="onehundred();" class="mdc-button mdc-button--raised">
+                <div class="mdc-button__ripple"></div>
+                <span id="clickme" style="text-transform: initial;" class="mdc-button__label">100 Seconds</span>
+              </button><br>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

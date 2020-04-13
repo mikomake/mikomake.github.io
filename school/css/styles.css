@@ -1,0 +1,266 @@
+body {
+  background-color: #f99b00;
+  font-family: sans-serif;
+}
+
+.main {
+  position: relative;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Navbar */
+
+#navbar a:hover {
+  color: white;
+}
+
+.active {
+  background-color: #f99b00;
+  color: white;
+}
+
+#navbar a{
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#navbar a:not(.active) {
+  color: lightgrey;
+}
+
+#navbarhome {
+  background-color: #333;
+}
+
+#navbar {
+  left: 0px;
+  z-index: 99;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  font-family: sans-serif;
+  left: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Image scroller */
+
+.scroller {
+  transition: opacity .2s;
+  position: relative;
+  height: 20%;
+  z-index: 0;
+  background-color: grey;
+  border-radius: 20px;
+  border-width: 5px;
+  overflow: hidden;
+  width: 100%;
+  top: 5px;
+}
+
+.mySlides {
+  top: 0;
+  display: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.button-left {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  background-color: #f99b00;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-right {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #f99b00;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  cursor: pointer;
+}
+
+/* News page */
+
+#newsvisit {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+#whatson {
+  color: white;
+  text-align: center;
+  background-color:#333;
+  padding: 20px;
+  height: 100%;
+  border-radius: 20px;
+}
+
+#whatson a {
+  color: white;
+  font-weight: bold;
+}
+
+li {
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* Mobile navbar*/
+
+#mobilenav {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  display: none;
+}
+
+
+#mobilenav #myLinks {
+  display: none;
+}
+
+#mobilenav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Change navbar when browser window is less than 680px */
+
+@media screen and (max-width: 680px) {
+  #mail, #facebook, #phone, #emailimage, #facebookimage, #phoneimage {
+    display: none
+  }
+  #mobilenav {
+    display: block
+  }
+  #navbar {
+    display: none
+  }
+  .button-left {
+    display: none
+  }
+  .button-right {
+    display: none
+  }
+  #whatson {
+    padding: 20px;
+    height: 20%;
+    color: white;
+    width: 87%;
+  }
+
+}
+
+/* Remove navbar items that are active */
+
+.mobilehide {
+  display: block
+}
+
+.mobileshow {
+  background-color: green;
+  position: fixed;
+  top: 150%;
+}
+
+/* Titlebar */
+
+#title {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  margin: auto;
+  padding: 0px;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+#titlebar {
+  overflow: auto;
+  height: 65px;
+}
+
+/* Contact info in titlebar */
+
+#mail {
+  position: absolute;
+  color: black;
+  top: 15px;
+  right: 10px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#facebook {
+  position: absolute;
+  color: black;
+  top: 35px;
+  right: 135px;
+}
+
+#facebookimage {
+  position: absolute;
+  color: black;
+  right: 0px;
+}
+
+
+#phoneimage {
+  position: absolute;
+  color: black;
+  right: 100px;
+}
+#emailimage {
+  position: absolute;
+  color: black;
+  right: 180px;
+}
+
+#phone {
+  position: absolute;
+  color: black;
+  top: 20px;
+  right: 10px;
+}

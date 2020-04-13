@@ -1,0 +1,127 @@
+body {
+  font-family: sans-serif;
+  background-color: #1c1c1c;
+  color: white;
+  font-size: 20px
+}
+
+#clickerdiv {
+  width: 50%;
+}
+
+#shopdiv {
+  position: fixed;
+  width: 50%;
+  top: 0px;
+  right: 0px;
+  background-color: lightgrey;
+  height: 70%;
+  color: black
+}
+
+#localstoragediv {
+  position: fixed;
+  width: 50%;
+  bottom: 0;
+  right: 0px;
+  background-color: darkred;
+  height: 30%;
+  color: white
+}
+
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 10px; /* Specified height */
+  background: black; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  border-radius: 20px;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: white;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  border-radius: 20px;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+#cookie {
+  left: 50%
+}
+
+#shopinside {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+#localinside {
+  max-width: 50%;
+  max-height: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+#insidediv {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+input {
+  font-size: 20px;
+  padding: 20px;
+  background-color: white;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+#shopdiv input {
+  background-color: black;
+  color: white;
+}
+
+.localbutton {
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+input:hover {
+  cursor: pointer;
+}

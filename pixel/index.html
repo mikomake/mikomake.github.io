@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Pixel Editor</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/fonts/stylesheet.css">
+    <link rel="shortcut icon" href="icon.svg" type="icon" />
+  </head>
+<body><br>
+	<img src="/pics/back.svg" style="cursor: pointer;position:absolute; left: 5px; top: 5px;" draggable=false onmousedown="history.back();">
+    <img src="icon.svg" width="200px"><br><h1>Pixel Editor</h1>
+<h3 id="penshow">Colour: black</h3>
+  <div draggable="false" class="palette">
+    <div class="pen" style="background-color:white" draggable=false onmousedown="setPenColour('white')"></div>
+    <div class="pen" style="background-color:black" draggable=false onmousedown="setPenColour('black')"></div>
+    <div class="pen" style="background-color:red"   draggable=false onmousedown="setPenColour('red')"></div>
+    <div class="pen" style="background-color:orange" draggable=false onmousedown="setPenColour('orange')"></div>
+    <div class="pen" style="background-color:yellow" draggable=false onmousedown="setPenColour('yellow')"></div>
+    <div class="pen" style="background-color:green" draggable=false onmousedown="setPenColour('green')"></div>
+    <div class="pen" style="background-color:blue" draggable=false onmousedown="setPenColour('blue')"></div>
+    <div class="pen" style="background-color:purple" draggable=false onmousedown="setPenColour('purple')"></div>
+  </div>
+  <div id="palette">
+    <div class="pen" style="background-color:turquoise" draggable=false onmousedown="setPenColour('turquoise')"></div>
+    <div class="pen" style="background-color:brown" draggable=false onmousedown="setPenColour('brown')"></div>
+    <div class="pen" style="background-color:grey" draggable=false onmousedown="setPenColour('grey')"></div>
+    <div class="pen" style="background-color:gold" draggable=false onmousedown="setPenColour('gold')"></div>
+    <div class="pen" style="background-color:pink" draggable=false onmousedown="setPenColour('pink')"></div>
+    <div class="pen" style="background-color:lightblue" draggable=false onmousedown="setPenColour('lightblue')"></div>
+    <div class="pen" style="background-color:silver" draggable=false onmousedown="setPenColour('silver')"></div>
+    <div class="pen" style="background-color:lightgreen" draggable=false onmousedown="setPenColour('lightgreen')"></div>
+  </div>
+  <div id="art">
+    <div class="row">
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+    </div>
+    <div class="row">
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+    </div>
+    <div class="row">
+          <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+    </div>
+    <div class="row">
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+    </div>
+    <div class="row">
+          <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+    </div>
+    <div class="row">
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+    </div>
+    <div class="row">
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+    </div>
+    <div class="row">
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+    </div>
+    <div class="row">
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+    </div>
+    <div class="row">
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+      <div class="pixel" draggable=false onmousedown="setPixelColour(this)"></div>
+    </div>
+  </div>
+  <br>
+<script src="script.js"></script>
+</body>
+
+</html>

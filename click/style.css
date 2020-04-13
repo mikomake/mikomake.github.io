@@ -1,0 +1,30 @@
+body {
+    background: rgb(80, 128, 64);
+      text-align: center;
+       margin: auto;
+  }
+      h1 {
+        font-family: 'beanz';
+      color:white;
+      font-weight: 400;
+  }
+  h2 {
+    color:white;
+    font-family: 'WorkReg';
+}
+#button {
+  width: 150px;
+  height: 150px;
+}
+     a {
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+    }
+  
+  
+  a:hover {
+      color: dimgray;
+    }
+    
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<title>Dessert of desserts</title>
+	<link rel="icon" type="image/png" href="images/icecream.png">
+</head>
+<body>
+	<img src="/back.svg" style="cursor: pointer;position:absolute; left: 5px; top: 5px;" draggable=false onmousedown="history.back();">
+	<div class="main">
+		<h1 id="title">Desert of desserts</h1>
+		<div id="stats">
+			<h2 id="aim">Aim: get 20</h2>
+			<h2 id="highscore"></h2>
+			<h2 id="time"></h2>
+			<h2 id="score"></h2>
+		</div>
+		<button id="start" type="button" onclick="start()">Normal mode</button>
+		<button id="startinsane" type="button" onclick="startinsane()">Insane mode</button>
+		<button id="thing" type="button" onclick="thing()">Play again</button>
+		<img draggable="false" onclick="popup()" oncontextmenu="gameover();" id="popup" src="images/icecream.png" width="150px"/>
+		<img draggable="false" onclick="gameover()" id="enemy" src="images/enemy.png" width="150px"/>
+		<iframe id="icecream" src="https://editor.p5js.org/mikomake/embed/FyoDzXZO_" width="400px" height="400px"></iframe>
+		<div id="settings">
+    	<h1>Settings</h1>
+      <div id="bgsetting">
+      	<div id="bginside">
+          <img draggable="false" id ="settingbg"onclick="changebg();" src="images/bg.jpeg" width="200px" />
+      	</div>
+    	</div>
+			<div id="desserts">
+      	<div id="dessertinside">
+          <img draggable="false" id ="dessertimg"onclick="changedessert();" src="images/icecream.png" width="150px" />
+      	</div>
+    	</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>	
+</html

@@ -1,0 +1,3 @@
+<h1>School Policy</h1></h1>
+<p style="font-size: 20px">Ross School keeps its policies and procedures on <a href="https://ross.schooldocs.co.nz/">School Docs</a>. If you are a parent/caregiver at the school you should receive a username and password so that you can log in and read our policies. If you don’t have these, please contact <a href="mailto:office@ross.school.nz">office@ross.school.nz</a>. We also have a copy of our complaints process up in the school foyer.
+<br><br>You can also read our 2019 charter (have to get pdf) or our <a href="https://www.ero.govt.nz/review-reports/ross-school-05-06-2018/">latest ERO report</a>.</p>
